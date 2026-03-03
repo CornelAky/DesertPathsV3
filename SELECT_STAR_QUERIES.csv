@@ -1,0 +1,113 @@
+File Path,Line Number,Table Name,Query Type,Context/Usage,Recommended Action Priority
+src/components/admin/StaffTab.tsx,112,journey_staff,select('*'),Fetching staff members for a trip,High - Staff has sensitive payment/personal data
+src/components/admin/DayEditor.tsx,110,accommodations,select('*'),Loading accommodations for day editor,Medium - Batch operation
+src/components/admin/DayEditor.tsx,111,transportation,select('*'),Loading transportation for day editor,Medium - Batch operation
+src/components/admin/DayEditor.tsx,113,dining,select('*'),Loading dining for day editor,Medium - Batch operation
+src/components/admin/DayEditor.tsx,135,documents,select('*'),Loading documents for day,Medium - Performance
+src/components/admin/ClientView.tsx,51,customers,select('*'),Exporting customer data,High - PII exposure
+src/components/admin/ClientView.tsx,56,itinerary_days,select('*'),Exporting itinerary days,Medium
+src/components/admin/ClientView.tsx,61,accommodations,select('*'),Exporting accommodations,Medium
+src/components/admin/ClientView.tsx,65,activities,select('*'),Exporting activities,Medium
+src/components/admin/ClientView.tsx,70,dining,select('*'),Exporting dining,Medium
+src/components/admin/ClientView.tsx,75,transportation,select('*'),Exporting transportation,Medium
+src/components/admin/TripEditor.tsx,51,customers,select('*'),Fetching customer for trip editing,High - PII exposure
+src/components/admin/BookingsTab.tsx,121,activity_booking_attachments,select('*'),Loading booking attachments,Medium - File metadata
+src/components/admin/BookingsTab.tsx,253,itinerary_days,select('*'),Loading itinerary days for bookings,Medium
+src/components/admin/BookingsTab.tsx,263,accommodations,select('*'),Loading accommodations for bookings,Medium
+src/components/admin/BookingsTab.tsx,270,activities,select('*'),Loading activities for bookings,Medium
+src/components/admin/BookingsTab.tsx,277,dining,select('*'),Loading dining for bookings,Medium
+src/components/admin/TripManager.tsx,128,itinerary_days,select('*'),Fetching days for trip,Medium - Core operation
+src/components/admin/TripManager.tsx,249,accommodations,select('*'),Duplicating accommodations,Medium - Batch operation
+src/components/admin/TripManager.tsx,305,activities,select('*'),Duplicating activities,Medium - Batch operation
+src/components/admin/TripManager.tsx,323,itinerary_entries,select('*'),Duplicating itinerary entries,Medium - Batch operation
+src/components/admin/TripManager.tsx,378,accommodations,select('*'),Exporting day data,Medium - Batch export
+src/components/admin/TripManager.tsx,379,activities,select('*'),Exporting day data,Medium - Batch export
+src/components/admin/TripManager.tsx,380,dining,select('*'),Exporting day data,Medium - Batch export
+src/components/admin/TripManager.tsx,994,accommodations,select('*'),Exporting trip data,Medium - Batch export
+src/components/admin/TripManager.tsx,995,activities,select('*'),Exporting trip data,Medium - Batch export
+src/components/admin/TripManager.tsx,996,dining,select('*'),Exporting trip data,Medium - Batch export
+src/components/admin/TimelineView.tsx,60,itinerary_days,select('*'),Timeline display,Medium
+src/components/admin/TimelineView.tsx,75,accommodations,select('*'),Timeline display,Medium
+src/components/admin/TimelineView.tsx,83,activities,select('*'),Timeline display,Medium
+src/components/admin/TimelineView.tsx,92,dining,select('*'),Timeline display,Medium
+src/components/admin/ShareManager.tsx,138,user_shared_trips,select('*'),Loading shared trips,Medium - Access control
+src/components/admin/OcrDataReview.tsx,58,extracted_data,select('*'),Reviewing OCR data,Medium - Large text data
+src/components/admin/ActivityModal.tsx,149,itinerary_days,select('*'),Loading days for activity,Low
+src/components/admin/ActivityModal.tsx,176,activity_booking_fees,select('*'),Loading booking fees,High - Financial data
+src/components/admin/ItineraryTable.tsx,59,accommodations,select('*'),Table display,Medium
+src/components/admin/ItineraryTable.tsx,63,activities,select('*'),Table display,Medium
+src/components/admin/ItineraryTable.tsx,68,dining,select('*'),Table display,Medium
+src/components/admin/AdminDashboard.tsx,113,journeys,select('*'),Dashboard overview,Medium
+src/components/admin/AdminDashboard.tsx,278,journeys,select('*'),Dashboard overview,Medium
+src/components/admin/AdminDashboard.tsx,300,itinerary_days,select('*'),Dashboard overview,Medium
+src/components/admin/AdminDashboard.tsx,321,accommodations,select('*'),Dashboard overview,Medium
+src/components/admin/AdminDashboard.tsx,340,activities,select('*'),Dashboard overview,Medium
+src/components/admin/AdminDashboard.tsx,527,dining,select('*'),Dashboard overview,Medium
+src/components/admin/TemplateEditor.tsx,95,template_days,select('*'),Template editor,Low
+src/components/admin/TemplateEditor.tsx,110,template_days,select('*'),Template editor,Low
+src/components/admin/TemplateEditor.tsx,373,template_activities,select('*'),Template editor batch,Low
+src/components/admin/TemplateEditor.tsx,374,template_dining,select('*'),Template editor batch,Low
+src/components/admin/TemplateEditor.tsx,375,template_accommodations,select('*'),Template editor batch,Low
+src/components/admin/ChooseGearModal.tsx,43,journey_gear,select('*'),Selecting gear items,Low
+src/components/admin/TemplateManager.tsx,39,templates,select('*'),Managing templates,Low
+src/components/admin/TemplateManager.tsx,112,template_days,select('*'),Managing templates,Low
+src/components/admin/TemplateManager.tsx,132,template_days,select('*'),Managing templates,Low
+src/components/admin/TemplateManager.tsx,152,template_days,select('*'),Managing templates,Low
+src/components/admin/ChooseStaffModal.tsx,63,master_staff,select('*'),Selecting staff,High - PII
+src/components/admin/JourneyAssistant.tsx,46,journeys,select('*'),AI journey creation,Medium
+src/components/admin/JourneyAssistant.tsx,67,activities,select('*'),AI journey creation,Medium
+src/components/admin/JourneyAssistant.tsx,68,dining,select('*'),AI journey creation,Medium
+src/components/admin/JourneyAssistant.tsx,69,accommodations,select('*'),AI journey creation,Medium
+src/components/admin/SettingsDashboard.tsx,52,settings,select('*'),Loading settings,Low
+src/components/admin/TransportationTab.tsx,157,journey_transportation_providers,select('*'),Transportation management,Medium
+src/components/admin/TransportationTab.tsx,158,journey_vehicles,select('*'),Transportation management,Medium
+src/components/admin/TransportationTab.tsx,159,itinerary_days,select('*'),Transportation management,Medium
+src/components/admin/TransportationTab.tsx,165,journey_vehicle_day_assignments,select('*'),Transportation management,Medium
+src/components/admin/TransportationTab.tsx,166,journey_gear,select('*'),Transportation management,Medium
+src/components/admin/ChooseVehicleModal.tsx,61,journey_vehicles,select('*'),Vehicle selection,Low
+src/components/admin/DatabaseManagement.tsx,174,UNKNOWN,select('*'),Database management - needs review,High - Review
+src/components/admin/DatabaseManagement.tsx,579,UNKNOWN,select('*'),Database management - needs review,High - Review
+src/components/admin/DatabaseManagement.tsx,736,UNKNOWN,select('*'),Database management - needs review,High - Review
+src/components/admin/DatabaseManagement.tsx,885,UNKNOWN,select('*'),Database management - needs review,High - Review
+src/components/admin/DatabaseManagement.tsx,1037,UNKNOWN,select('*'),Database management - needs review,High - Review
+src/components/admin/DatabaseManagement.tsx,1182,UNKNOWN,select('*'),Database management - needs review,High - Review
+src/components/admin/DatabaseManagement.tsx,1336,UNKNOWN,select('*'),Database management - needs review,High - Review
+src/components/admin/DatabaseManagement.tsx,1490,UNKNOWN,select('*'),Database management - needs review,High - Review
+src/components/admin/DuplicateTripModal.tsx,44,journeys,select('*'),Duplicating trip,Medium
+src/components/admin/DuplicateTripModal.tsx,86,itinerary_days,select('*'),Duplicating trip,Medium
+src/components/admin/DuplicateTripModal.tsx,119,accommodations,select('*'),Duplicating trip batch,Medium
+src/components/admin/DuplicateTripModal.tsx,121,dining,select('*'),Duplicating trip batch,Medium
+src/components/admin/DuplicateTripModal.tsx,193,activities,select('*'),Duplicating trip,Medium
+src/components/admin/PropertyManagement.tsx,51,properties,select('*'),Property management,Low
+src/components/admin/AllTripsFeesManager.tsx,171,activity_booking_fees,select('*'),Managing fees,High - Financial data
+src/components/admin/ChooseProviderModal.tsx,50,providers,select('*'),Provider selection,Low
+src/components/admin/ExtractedDataReview.tsx,46,extracted_data,select('*'),Reviewing extracted data,Medium - Large text
+src/components/admin/CreateTripWithTemplate.tsx,57,templates,select('*'),Creating from template,Low
+src/components/admin/EnhancedItineraryTable.tsx,65,itinerary_days,select('*'),Enhanced table display,Medium
+src/components/admin/EnhancedItineraryTable.tsx,74,itinerary_days,select('*'),Enhanced table display,Medium
+src/components/admin/EnhancedItineraryTable.tsx,84,accommodations,select('*'),Enhanced table batch,Medium
+src/components/admin/EnhancedItineraryTable.tsx,85,activities,select('*'),Enhanced table batch,Medium
+src/components/admin/EnhancedItineraryTable.tsx,86,dining,select('*'),Enhanced table batch,Medium
+src/components/admin/ItineraryEntriesManager.tsx,89,itinerary_entries,select('*'),Managing entries,Medium
+src/components/admin/ItineraryEntryFeeEditor.tsx,45,activity_booking_fees,select('*'),Fee editor,High - Financial data
+src/components/admin/UserManagement.tsx,67,users,select('*'),User management,High - Auth/sensitive
+src/components/guide/GuideView.tsx,120,journeys,select('*'),Guide view,Medium
+src/components/guide/GuideView.tsx,128,accommodations,select('*'),Guide view,Medium
+src/components/guide/GuideView.tsx,129,transportation,select('*'),Guide view,Medium
+src/components/guide/GuideView.tsx,132,activities,select('*'),Guide view,Medium
+src/components/guide/GuideView.tsx,137,dining,select('*'),Guide view,Medium
+src/components/guide/GuideView.tsx,263,journeys,select('*'),Guide view,Medium
+src/components/guide/GuideView.tsx,285,accommodations,select('*'),Guide view batch,Medium
+src/components/guide/GuideView.tsx,286,transportation,select('*'),Guide view batch,Medium
+src/components/guide/GuideView.tsx,288,dining,select('*'),Guide view batch,Medium
+src/components/guide/GuideView.tsx,345,activities,select('*'),Guide view,Medium
+src/components/guide/GuideView.tsx,412,documents,select('*'),Guide documents,Medium
+src/components/guide/GuideTripDocuments.tsx,187,documents,select('*'),Loading documents,Medium
+src/components/client/ClientView.tsx,80,accommodations,select('*'),Client view export,Medium - Client-facing
+src/components/client/ClientView.tsx,85,activities,select('*'),Client view export,Medium - Client-facing
+src/components/client/ClientView.tsx,90,dining,select('*'),Client view export,Medium - Client-facing
+src/components/client/ClientView.tsx,94,transportation,select('*'),Client view export,Medium - Client-facing
+src/components/client/ClientView.tsx,99,itinerary_days,select('*'),Client view export,Medium - Client-facing
+src/components/client/ClientView.tsx,104,customers,select('*'),Client view export,High - PII exposure
+supabase/functions/process-ocr-document/index.ts,51,uploaded_documents,select("*"),OCR processing,High - Edge function
+supabase/functions/process-uploaded-file/index.ts,59,uploaded_files,select("*"),File processing,High - Edge function
